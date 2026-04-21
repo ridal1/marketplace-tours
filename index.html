@@ -90,16 +90,65 @@
     </nav>
 
     <!-- Hero section -->
-<section class="h-screen flex items-center justify-center overlay-light bg-cover bg-center bg-fixed bg-no-repeat  ">
+<!-- <section class="h-screen flex items-center justify-center overlay-light bg-cover bg-center bg-fixed bg-no-repeat  ">
   <div class=" md:w-1/2 lg:w-1/1  text-center p-8 text-white">
     <h1 class="text-4xl lg:text-6xl font-bold mb-4">Discover Morocco - Explore Morocco with us</h1>
       <p class=" text-lg md:text-xl mb-6"> Experience Morocco with us. Book tours & activities at exclusive price. Marrakech </p>
-        <button class="btn mr-4">Show Now</button>
-        <button class="btn mr-4">Explore</button>
+        <button class="btn mr-4 rounded-4xl cursor-pointer ">Show Now</button>
+        <button class="btnExp mr-4 rounded-4xl cursor-pointer ">Explore</button>
     
     
   </div>
+</section> --><section class="relative h-[100svh] w-full overflow-hidden flex items-center justify-center">
+
+  <!-- 🎬 فيديو (يظهر فقط في الحاسوب) -->
+  <iframe
+    class="hidden md:block absolute top-1/2 left-1/2 w-[150vw] h-[150vh] -translate-x-1/2 -translate-y-1/2"
+    src="https://www.youtube.com/embed/TPHwUGTxgiw?autoplay=1&mute=1&loop=1&playlist=TPHwUGTxgiw&controls=0&modestbranding=1&rel=0"
+    frameborder="0"
+    allow="autoplay; fullscreen"
+  ></iframe>
+
+  <!-- 🖼️ صورة (فقط في الموبايل) -->
+<div class="md:hidden absolute inset-0 overflow-hidden">
+
+  <!-- الصورة المتحركة -->
+  <div class="ken-burns overlay-light"></div>
+
+  <!-- Blur + overlay سينمائي -->
+  <div class="absolute inset-0 cinematic-overlay"></div>
+
+</div>
+
+  <!-- Overlay موحد -->
+  <div class="absolute inset-0 bg-black/60"></div>
+
+  <!-- Content -->
+  <div class="relative z-10 text-center text-white px-6">
+
+    <h1 class="text-3xl md:text-6xl font-bold mb-4">
+      Discover Morocco - Explore Morocco with us
+    </h1>
+
+    <p class="text-base md:text-xl mb-6 text-gray-200">
+      Experience Morocco with us. Book tours & activities at exclusive price. Marrakech
+    </p>
+
+    <div class="flex justify-center gap-3">
+      <button class="px-5 py-3 bg-white text-black rounded-full font-semibold">
+        Show Now
+      </button>
+
+      <button class="px-5 py-3 bg-white/20 text-white rounded-full font-semibold backdrop-blur">
+        Explore
+      </button>
+    </div>
+
+  </div>
+
 </section>
+
+
 
 
   </body>
