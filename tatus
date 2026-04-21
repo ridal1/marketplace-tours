@@ -1,0 +1,17 @@
+[33mcommit bb67f5bafe29af7706b5ac781a0e10a2a50e1454[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmaster[m[33m)[m
+Author: Ridal toufiq <classajavascript@gmail.com>
+Date:   Tue Apr 21 12:32:11 2026 +0200
+
+    Nav bar created
+
+[33mcommit 348ecb73b1654c35c369ae4c1c9a197a0610fd2a[m[33m ([m[1;33mtag: [m[1;33mv1.1[m[33m)[m
+Author: Ridal toufiq <classajavascript@gmail.com>
+Date:   Tue Apr 21 12:29:12 2026 +0200
+
+    Nav bar descktop mobile
+
+[33mcommit fa63effbad85b926a9127f633872d4c06321ddbd[m[33m ([m[1;33mtag: [m[1;33mv1.0[m[33m)[m
+Author: Ridal toufiq <classajavascript@gmail.com>
+Date:   Tue Apr 21 10:33:52 2026 +0200
+
+    vite tailwind css instaled
