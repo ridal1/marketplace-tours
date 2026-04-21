@@ -1,13 +1,93 @@
 <!doctype html>
 <html>
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="/src/style.css" rel="stylesheet">
-</head>
-<body>
-  <h1 class="text-3xl font-bold  text-red-600">
-    Hello world!
-  </h1>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/src/style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <nav class="bg-zinc-800 py-4 px-7 shadow-lg sticky top-0">
+      <div class="container flex justify-between mx-auto items-center">
+        <div>
+          <a href="">
+            <img src="public/img/logo.png" class="w-40" alt="" />
+          </a>
+        </div>
+        <div class="hidden md:flex space-x-6 text-gray-300 font-bold">
+          <a href="" class="hover:text-red-600">Home</a>
+          <a href="" class="hover:text-red-600">About</a>
+          <a href="" class="hover:text-red-600">Shop</a>
+          <a href="" class="hover:text-red-600">Testimony</a>
+          <a href="" class="hover:text-red-600">Contact</a>
+          <a href="" class="hover:text-red-600">New version</a>
+          <button class=" cursor-pointer hover:text-red-600 " >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+              class="size-6"
+            >
+              <path
+                d="M12 2.25a.75.75 0 0 1 .75.75v2.25a.75.75 0 0 1-1.5 0V3a.75.75 0 0 1 .75-.75ZM7.5 12a4.5 4.5 0 1 1 9 0 4.5 4.5 0 0 1-9 0ZM18.894 6.166a.75.75 0 0 0-1.06-1.06l-1.591 1.59a.75.75 0 1 0 1.06 1.061l1.591-1.59ZM21.75 12a.75.75 0 0 1-.75.75h-2.25a.75.75 0 0 1 0-1.5H21a.75.75 0 0 1 .75.75ZM17.834 18.894a.75.75 0 0 0 1.06-1.06l-1.59-1.591a.75.75 0 1 0-1.061 1.06l1.59 1.591ZM12 18a.75.75 0 0 1 .75.75V21a.75.75 0 0 1-1.5 0v-2.25A.75.75 0 0 1 12 18ZM7.758 17.303a.75.75 0 0 0-1.061-1.06l-1.591 1.59a.75.75 0 0 0 1.06 1.061l1.591-1.59ZM6 12a.75.75 0 0 1-.75.75H3a.75.75 0 0 1 0-1.5h2.25A.75.75 0 0 1 6 12ZM6.697 7.757a.75.75 0 0 0 1.06-1.06l-1.59-1.591a.75.75 0 0 0-1.061 1.06l1.59 1.591Z"
+              />
+            </svg>
+          </button>
+        </div>
+        <div class="md:hidden text-gray-300 font-bold">
+        <button id="menu-btn">
+  <!-- أيقونة القائمة -->
+  <svg id="icon-menu"
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 24 24"
+    fill="currentColor"
+    class="size-6"
+  >
+    <path
+      fill-rule="evenodd"
+      d="M3 6.75A.75.75 0 0 1 3.75 6h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 6.75ZM3 12a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 12Zm0 5.25a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75a.75.75 0 0 1-.75-.75Z"
+      clip-rule="evenodd"
+    />
+  </svg>
+
+  <!-- أيقونة X -->
+  <svg id="icon-close"
+    xmlns="http://www.w3.org/2000/svg"
+    fill="none"
+    viewBox="0 0 24 24"
+    stroke-width="1.5"
+    stroke="currentColor"
+    class="size-6 hidden"
+  >
+    <path stroke-linecap="round" stroke-linejoin="round"
+      d="M6 18 18 6M6 6l12 12" />
+  </svg>
+</button>
+        </div>
+      </div>
+      <div
+        id="mobile-menu"
+        class="text-center text-gray-300 font-bold md:hidden hidden"
+      >
+        <a class="block p-2 hover:text-white" href="">Home</a>
+        <a class="block p-2 hover:text-white" href="">About</a>
+        <a class="block p-2 hover:text-white" href="">Shop</a>
+        <a class="block p-2 hover:text-white" href="">Testimony</a>
+        <a class="block p-2 hover:text-white" href="">Contact</a>
+        <a class="block p-2 hover:text-white" href="">New version</a>
+        <button class="p-2 hover:text-white">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+            class="size-6"
+          >
+            <path
+              d="M12 2.25a.75.75 0 0 1 .75.75v2.25a.75.75 0 0 1-1.5 0V3a.75.75 0 0 1 .75-.75ZM7.5 12a4.5 4.5 0 1 1 9 0 4.5 4.5 0 0 1-9 0ZM18.894 6.166a.75.75 0 0 0-1.06-1.06l-1.591 1.59a.75.75 0 1 0 1.06 1.061l1.591-1.59ZM21.75 12a.75.75 0 0 1-.75.75h-2.25a.75.75 0 0 1 0-1.5H21a.75.75 0 0 1 .75.75ZM17.834 18.894a.75.75 0 0 0 1.06-1.06l-1.59-1.591a.75.75 0 1 0-1.061 1.06l1.59 1.591ZM12 18a.75.75 0 0 1 .75.75V21a.75.75 0 0 1-1.5 0v-2.25A.75.75 0 0 1 12 18ZM7.758 17.303a.75.75 0 0 0-1.061-1.06l-1.591 1.59a.75.75 0 0 0 1.06 1.061l1.591-1.59ZM6 12a.75.75 0 0 1-.75.75H3a.75.75 0 0 1 0-1.5h2.25A.75.75 0 0 1 6 12ZM6.697 7.757a.75.75 0 0 0 1.06-1.06l-1.59-1.591a.75.75 0 0 0-1.061 1.06l1.59 1.591Z"
+            />
+          </svg>
+        </button>
+      </div>
+    </nav>
+  </body>
+  <script src="src/scriptcore.js"></script>
 </html>
