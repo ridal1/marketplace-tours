@@ -6,6 +6,7 @@
     <link href="/src/style.css" rel="stylesheet" />
   </head>
   <body>
+    <!-- Start Nav bar -->
     <nav class="bg-zinc-800 py-4 px-7 shadow-lg sticky top-0">
       <div class="container flex justify-between mx-auto items-center">
         <div>
@@ -20,7 +21,7 @@
           <a href="" class="hover:text-red-600">Testimony</a>
           <a href="" class="hover:text-red-600">Contact</a>
           <a href="" class="hover:text-red-600">New version</a>
-          <button class=" cursor-pointer hover:text-red-600 " >
+          <button class="cursor-pointer hover:text-red-600">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 24 24"
@@ -34,34 +35,39 @@
           </button>
         </div>
         <div class="md:hidden text-gray-300 font-bold">
-        <button id="menu-btn">
-  <!-- أيقونة القائمة -->
-  <svg id="icon-menu"
-    xmlns="http://www.w3.org/2000/svg"
-    viewBox="0 0 24 24"
-    fill="currentColor"
-    class="size-6"
-  >
-    <path
-      fill-rule="evenodd"
-      d="M3 6.75A.75.75 0 0 1 3.75 6h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 6.75ZM3 12a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 12Zm0 5.25a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75a.75.75 0 0 1-.75-.75Z"
-      clip-rule="evenodd"
-    />
-  </svg>
+          <button id="menu-btn">
+            <!-- أيقونة القائمة -->
+            <svg
+              id="icon-menu"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+              class="size-6"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M3 6.75A.75.75 0 0 1 3.75 6h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 6.75ZM3 12a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 12Zm0 5.25a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75a.75.75 0 0 1-.75-.75Z"
+                clip-rule="evenodd"
+              />
+            </svg>
 
-  <!-- أيقونة X -->
-  <svg id="icon-close"
-    xmlns="http://www.w3.org/2000/svg"
-    fill="none"
-    viewBox="0 0 24 24"
-    stroke-width="1.5"
-    stroke="currentColor"
-    class="size-6 hidden"
-  >
-    <path stroke-linecap="round" stroke-linejoin="round"
-      d="M6 18 18 6M6 6l12 12" />
-  </svg>
-</button>
+            <!-- أيقونة X -->
+            <svg
+              id="icon-close"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="size-6 hidden"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M6 18 18 6M6 6l12 12"
+              />
+            </svg>
+          </button>
         </div>
       </div>
       <div
@@ -89,68 +95,138 @@
       </div>
     </nav>
 
-    <!-- Hero section -->
-<!-- <section class="h-screen flex items-center justify-center overlay-light bg-cover bg-center bg-fixed bg-no-repeat  ">
-  <div class=" md:w-1/2 lg:w-1/1  text-center p-8 text-white">
-    <h1 class="text-4xl lg:text-6xl font-bold mb-4">Discover Morocco - Explore Morocco with us</h1>
-      <p class=" text-lg md:text-xl mb-6"> Experience Morocco with us. Book tours & activities at exclusive price. Marrakech </p>
-        <button class="btn mr-4 rounded-4xl cursor-pointer ">Show Now</button>
-        <button class="btnExp mr-4 rounded-4xl cursor-pointer ">Explore</button>
-    
-    
-  </div>
-</section> --><section class="relative h-[100svh] w-full overflow-hidden flex items-center justify-center">
+    <!-- End Nav bar -->
 
-  <!-- 🎬 فيديو (يظهر فقط في الحاسوب) -->
-  <iframe
-    class="hidden md:block absolute top-1/2 left-1/2 w-[150vw] h-[150vh] -translate-x-1/2 -translate-y-1/2"
-    src="https://www.youtube.com/embed/TPHwUGTxgiw?autoplay=1&mute=1&loop=1&playlist=TPHwUGTxgiw&controls=0&modestbranding=1&rel=0"
-    frameborder="0"
-    allow="autoplay; fullscreen"
-  ></iframe>
+    <!-- Start Hero section -->
+    <section
+      class="h-screen flex items-center justify-center overlay-light bg-cover bg-center bg-fixed bg-no-repeat"
+    >
+      <div class="md:w-1/2 lg:w-1/1 text-center p-8 text-white">
+        <h1 class="text-4xl lg:text-6xl font-bold mb-4">
+          Discover Morocco - Explore Morocco with us
+        </h1>
+        <p class="text-lg md:text-xl mb-6">
+          Experience Morocco with us. Book tours & activities at exclusive
+          price. Marrakech
+        </p>
+        <button class="btn mr-4 rounded-4xl cursor-pointer">Show Now</button>
+        <button class="btnExp mr-4 rounded-4xl cursor-pointer">Explore</button>
+      </div>
+    </section>
 
-  <!-- 🖼️ صورة (فقط في الموبايل) -->
-<div class="md:hidden absolute inset-0 overflow-hidden">
+    <!-- End Hero section -->
 
-  <!-- الصورة المتحركة -->
-  <div class="ken-burns overlay-light"></div>
+    <!-- Start About -->
 
-  <!-- Blur + overlay سينمائي -->
-  <div class="absolute inset-0 cinematic-overlay"></div>
+    <section class="container mx-auto mt-12 md:mt-6">
+      <div class="flex flex-col md:flex-row items-center gap-8 md:p-0">
+        <div class="mx-4 mt-12 p-0 md:m-12">
+          <img src="public/img/about-viarmo.jpg" alt="" class="rounded-4xl" />
+        </div>
+        <div class="md:w-1/2">
+          <p class="text-center md:text-left text-2xl mb-2">what we do</p>
+          <h2 class="text-4xl font-bold mb-4 text-center md:text-left">
+            About Us
+          </h2>
+          <p class="mx-4 md:mx-auto">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis
+            recusandae placeat minima vero distinctio dolorem itaque nam
+            adipisci. Quam, reprehenderit!,Lorem ipsum dolor sit amet
+            consectetur adipisicing elit. Quis recusandae placeat minima vero
+            distinctio dolorem itaque nam adipisci. Quam, reprehenderit!,Lorem
+            ipsum dolor sit amet consectetur adipisicing elit. Quis recusandae
+            placeat minima vero distinctio dolorem itaque nam adipisci. Quam,
+            reprehenderit! Lorem ipsum dolor sit amet consectetur adipisicing
+            elit. Quis recusandae placeat minima vero distinctio dolorem itaque
+            nam adipisci. Quam, reprehenderit!,Lorem ipsum dolor sit amet
+            consectetur adipisicing elit. Quis recusandae placeat minima vero
+            distinctio dolorem itaque nam adipisci. Quam, reprehenderit!,Lorem
+            ipsum dolor sit amet consectetur adipisicing elit. Quis recusandae
+            placeat minima vero distinctio dolorem itaque nam adipisci. Quam,
+            reprehenderit!
+          </p>
+          <div class="flex justify-center md:justify-start">
+            <button
+              class="btn mx-4 md:mx-0 px-15 mt-6 rounded-xs cursor-pointer w-full md:w-1/3 md:rounded-4xl"
+            >
+              Red More
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
 
-</div>
+    <!-- End About -->
 
-  <!-- Overlay موحد -->
-  <div class="absolute inset-0 bg-black/60"></div>
+    <!-- Star Tours -->
 
-  <!-- Content -->
-  <div class="relative z-10 text-center text-white px-6">
+    <section class="container mx-auto py-12 px-4 mt-16">
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Card -->
+        <div
+          class="shadow-lg rounded-lg overflow-hidden group hover:shadow-xl transition cursor-pointer"
+        >
+          <div class="relative group">
+            <img
+              class="w-full h-80 object-cover group-hover:scale-105 transition duration-300"
+              src="/img/marrakech-1.jpeg"
+            />
 
-    <h1 class="text-3xl md:text-6xl font-bold mb-4">
-      Discover Morocco - Explore Morocco with us
-    </h1>
+            <!-- زر القلب -->
+            <button
+              class="absolute top-3 right-3 bg-white p-2 rounded-full shadow hover:bg-red-100 hover:text-white transition"
+            >
+              ❤️
+            </button>
+          </div>
 
-    <p class="text-base md:text-xl mb-6 text-gray-200">
-      Experience Morocco with us. Book tours & activities at exclusive price. Marrakech
-    </p>
+          <div class="p-5">
+            <h2 class="truncate w-full font-bold text-lg mb-2">
+              Marrakech : cascades de l'Ourika
+            </h2>
 
-    <div class="flex justify-center gap-3">
-      <button class="px-5 py-3 bg-white text-black rounded-full font-semibold">
-        Show Now
-      </button>
+            <p class="truncate w-full text-sm text-gray-500 mb-2">
+              Explorez la superbe vallée de l'Ourika et les captivantes.
+            </p>
 
-      <button class="px-5 py-3 bg-white/20 text-white rounded-full font-semibold backdrop-blur">
-        Explore
-      </button>
-    </div>
+            <div class="flex items-center gap-2">
+              <p class="text-sm text-gray-500">⭐ 4.8 (1200)</p>
+              <del class="text-sm text-gray-400">2500</del>
+              <span class="text-xl font-bold text-red-500">1900</span>
+            </div>
+          </div>
+        </div>
 
-  </div>
-
-</section>
-
-
+        <!-- كرر نفس الكارد -->
+      </div>
+    </section>
 
 
+
+
+
+
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+
+    <!-- End About -->
   </body>
   <script src="src/scriptcore.js"></script>
 </html>
